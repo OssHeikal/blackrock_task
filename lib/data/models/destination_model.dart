@@ -1,9 +1,5 @@
 import 'package:equatable/equatable.dart';
 
-List<DestinationModel> destinationFromJson(dynamic json) {
-  return List<DestinationModel>.from(json['list'].map((item) => DestinationModel.fromJson(item)));
-}
-
 class DestinationModel extends Equatable {
   final int cityId;
   final String title;
